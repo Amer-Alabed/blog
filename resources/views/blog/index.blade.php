@@ -22,7 +22,7 @@
                 <div class="card-body">
                     <h2 class="card-title">{{$post->title}}</h2>
                     <p class="card-text"><small class="text-muted">By: {{ $post->user->name }} | Created at: {{ date('Y-m-d', strtotime($post->created_at)) }}</small></p>
-                    <p class="card-text">{{$post->discription}}</p>
+                    <p class="card-text">{{$post->description}}</p>
 
                     <a href="/blog/{{$post->slug}}" class="btn btn-primary">Read More</a>
 

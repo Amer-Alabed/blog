@@ -20,7 +20,7 @@
                     By: {{ $post->user->name }} | Created at: {{ date('Y-m-d', strtotime($post->created_at)) }}
                 </small>
             </p>
-            <p class="card-text">{{ $post->discription }}</p>
+            <p class="card-text">{{ $post->description }}</p>
             @if(Auth::user() && Auth::user()->id == $post->user_id)
             <a href="/blog/{{ $post->slug }}/edit" class="btn btn-primary">Edit Post</a>
 
